@@ -3,89 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hexagon AB - AI Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Hexagon AB AI Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .banner {
+            background: url('banner.jpg') no-repeat center center/cover;
+            height: 400px;
+            text-align: center;
+            color: white;
+            padding-top: 100px;
+        }
+        .banner h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        .section {
+            padding: 20px;
+            background: #fff;
+            margin: 20px 0;
+        }
+        .section h2 {
+            margin: 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Hexagon AB</h1>
+            <div id="branding">
+                <h1><span class="highlight">Hexagon AB</span> AI Solutions</h1>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
                     <li><a href="#adams">ADAMS</a></li>
                     <li><a href="#vtd">VTD</a></li>
                     <li><a href="#cfd-cradle">CFD-Cradle</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="home">
-        <div class="container">
-            <h2>Welcome to Hexagon AB</h2>
-            <p>Leading the way in AI-driven simulation solutions.</p>
-        </div>
-    </section>
+    <div class="banner">
+        <h1>Innovative AI Solutions for Your Business</h1>
+    </div>
 
-    <section id="adams">
-        <div class="container">
+    <div class="container">
+        <section id="adams" class="section">
             <h2>ADAMS</h2>
-            <p>ADAMS is the world’s most widely used multibody dynamics simulation software. It enables engineers to evaluate and optimize the performance of complex mechanical systems.</p>
+            <p>ADAMS is a leading multibody dynamics simulation software used to solve complex vehicle dynamics problems. Trusted by 24 out of the top 25 automotive OEMs, ADAMS ensures high fidelity and efficient simulations.</p>
             <ul>
-                <li>Dynamic simulation and analysis</li>
-                <li>Enhanced motion analysis</li>
-                <li>Advanced vehicle dynamics</li>
+                <li>Used by top automotive OEMs</li>
+                <li>Ensures successful simulations for vehicle dynamics</li>
+                <li>Certified by major aviation and space agencies</li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <section id="vtd">
-        <div class="container">
+        <section id="vtd" class="section">
             <h2>VTD</h2>
-            <p>VTD (Virtual Test Drive) is a comprehensive simulation toolchain for the development and testing of advanced driver assistance systems and automated driving systems.</p>
+            <p>Virtual Test Drive (VTD) is a comprehensive simulation solution for the development and testing of advanced driver assistance systems (ADAS) and automated driving systems. VTD enables safe and extensive testing of vehicle dynamics in a virtual environment.</p>
             <ul>
-                <li>High-fidelity simulations</li>
-                <li>Real-world environment replication</li>
-                <li>Safety and performance testing</li>
+                <li>Comprehensive ADAS and automated driving simulation</li>
+                <li>Safe and extensive virtual testing</li>
+                <li>Supports development of cutting-edge automotive technologies</li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <section id="cfd-cradle">
-        <div class="container">
+        <section id="cfd-cradle" class="section">
             <h2>CFD-Cradle</h2>
-            <p>CFD-Cradle provides robust computational fluid dynamics (CFD) simulation solutions to analyze and optimize fluid flow and heat transfer in various applications.</p>
+            <p>CFD-Cradle offers advanced computational fluid dynamics solutions for fluid flow and heat transfer simulations. Its capabilities include aerodynamic analysis, thermal management, and more, ensuring optimal performance in various engineering applications.</p>
             <ul>
-                <li>Comprehensive CFD analysis</li>
-                <li>Thermal management solutions</li>
-                <li>Optimization of fluid systems</li>
+                <li>Advanced fluid flow and heat transfer simulations</li>
+                <li>Aerodynamic and thermal management analysis</li>
+                <li>Optimal performance for engineering applications</li>
             </ul>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Hexagon AB. All rights reserved.</p>
-        </div>
+        <p>Contact Us: 031-721-7277 | Email: allai@allai.co.kr</p>
+        <p>© 2024 Hexagon AB. All Rights Reserved.</p>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
