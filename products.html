@@ -57,6 +57,22 @@
             padding-left: 1rem;
             border-left: 3px solid #10274c;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 0.5rem;
+            text-align: center;
+        }
+        th {
+            background: #10274c;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -84,10 +100,85 @@
         </ul>
         <h4>주요 제품 라인업</h4>
         <ul class="product-list">
+            <li><strong>Jetson Nano:</strong> 경제적이면서도 강력한 AI 성능을 제공하는 소형 모듈입니다.</li>
+            <li><strong>Jetson TX2 NX:</strong> 저전력, 고성능 AI 컴퓨팅을 제공하는 모듈입니다.</li>
+            <li><strong>Jetson Xavier NX:</strong> 서버급 성능을 작은 폼 팩터에서 제공하는 모듈입니다.</li>
+            <li><strong>Jetson AGX Xavier:</strong> 가장 강력한 AI 컴퓨팅 성능을 제공하는 모듈입니다.</li>
             <li><strong>Jetson Orin Nano:</strong> 고성능 AI와 저전력 소모를 특징으로 하는 소형 모듈입니다.</li>
             <li><strong>Jetson Orin NX:</strong> 중간급 AI 성능과 에너지 효율을 제공하는 모듈입니다.</li>
             <li><strong>Jetson AGX Orin:</strong> 최상위 성능의 AI 컴퓨팅을 제공하는 고성능 모듈입니다.</li>
         </ul>
+        <h4>Hardware Specifications</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>CPU</th>
+                    <th>GPU</th>
+                    <th>Memory</th>
+                    <th>Storage</th>
+                    <th>Power Consumption</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jetson Nano</td>
+                    <td>Quad-core ARM Cortex-A57</td>
+                    <td>128-core Maxwell</td>
+                    <td>4GB LPDDR4</td>
+                    <td>16GB eMMC</td>
+                    <td>5-10W</td>
+                </tr>
+                <tr>
+                    <td>Jetson TX2 NX</td>
+                    <td>Hexa-core ARMv8.2</td>
+                    <td>256-core Pascal</td>
+                    <td>4GB LPDDR4</td>
+                    <td>16GB eMMC</td>
+                    <td>7.5-15W</td>
+                </tr>
+                <tr>
+                    <td>Jetson Xavier NX</td>
+                    <td>8-core ARMv8.2</td>
+                    <td>384-core Volta</td>
+                    <td>8GB LPDDR4</td>
+                    <td>16GB eMMC</td>
+                    <td>10-15W</td>
+                </tr>
+                <tr>
+                    <td>Jetson AGX Xavier</td>
+                    <td>8-core ARMv8.2</td>
+                    <td>512-core Volta</td>
+                    <td>32GB LPDDR4</td>
+                    <td>32GB eMMC</td>
+                    <td>10-30W</td>
+                </tr>
+                <tr>
+                    <td>Jetson Orin Nano</td>
+                    <td>6-core ARM Cortex-A78AE</td>
+                    <td>1024-core Ampere</td>
+                    <td>8GB LPDDR5</td>
+                    <td>16GB eMMC</td>
+                    <td>7-15W</td>
+                </tr>
+                <tr>
+                    <td>Jetson Orin NX</td>
+                    <td>8-core ARM Cortex-A78AE</td>
+                    <td>2048-core Ampere</td>
+                    <td>16GB LPDDR5</td>
+                    <td>32GB eMMC</td>
+                    <td>10-25W</td>
+                </tr>
+                <tr>
+                    <td>Jetson AGX Orin</td>
+                    <td>12-core ARM Cortex-A78AE</td>
+                    <td>4096-core Ampere</td>
+                    <td>64GB LPDDR5</td>
+                    <td>64GB eMMC</td>
+                    <td>15-60W</td>
+                </tr>
+            </tbody>
+        </table>
         <h4>JetPack</h4>
         <p>JetPack은 NVIDIA Jetson 플랫폼용 소프트웨어 개발 키트(SDK)로, AI 애플리케이션을 손쉽게 개발, 최적화, 배포할 수 있도록 지원합니다. CUDA, cuDNN, TensorRT와 같은 NVIDIA의 소프트웨어 라이브러리와 도구들이 포함되어 있어 강력한 AI 솔루션을 개발할 수 있습니다.</p>
         <h4>무인 배송 로봇</h4>
