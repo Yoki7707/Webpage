@@ -3,111 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>올에이아이 - AI 비즈니스의 시작</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>주식회사 올에이아이</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .section {
+            margin: 2rem 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .jetson-image, .hexagon-image, .company-image, .omniverse-image, .isaac-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-list li {
+            margin: 1rem 0;
+        }
+        .news-item {
+            border-bottom: 1px solid #ccc;
+            padding: 1rem 0;
+        }
+        .sub-section {
+            margin-top: 1rem;
+            padding-left: 1rem;
+            border-left: 3px solid #333;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>올에이아이</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">홈</a></li>
-                    <li><a href="#about">회사 소개</a></li>
-                    <li><a href="#services">서비스</a></li>
-                    <li><a href="#projects">프로젝트</a></li>
-                    <li><a href="#business-model">비즈니스 모델</a></li>
-                    <li><a href="#why-choose-us">왜 올에이아이?</a></li>
-                    <li><a href="#contact">문의</a></li>
-                </ul>
-            </nav>
-        </div>
+        <img src="company-image.jpg" alt="올에이아이 로고" class="company-image">
+        <h1>주식회사 올에이아이</h1>
+        <p>NVIDIA Jetson 및 Hexagon AB 솔루션 판매</p>
     </header>
-
-    <section id="home" class="hero">
-        <div class="container">
-            <h2>End to End Edge AI System Develop Service</h2>
-            <p>올에이아이는 AI 비즈니스의 탄생부터 목표까지 함께하는 파트너 입니다.</p>
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <div class="container">
+    <nav>
+        <a href="#about">회사 소개</a>
+        <a href="#products">제품 정보</a>
+        <a href="#news">뉴스 및 공지사항</a>
+        <a href="#contact">문의하기</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
             <h2>회사 소개</h2>
-            <p>올에이아이는 AI 비즈니스의 탄생부터 목표까지 함께하는 파트너입니다.</p>
-            <p>지금까지 ALL.AI 가 걸어온 길을 알려드립니다.</p>
-            <img src="images/company-overview.png" alt="회사 소개 이미지">
-        </div>
-    </section>
-
-    <section id="services" class="section">
-        <div class="container">
-            <h2>서비스</h2>
-            <ul>
-                <li>NVIDIA Jetson Carrier Board 제작</li>
-                <li>자율주행 및 로봇 관련 동력학 열역학 검증과 시뮬레이션</li>
-                <li>로봇 제어 장비 및 검증 소프트웨어 개발</li>
-                <li>데이터 수집 및 가공 서비스</li>
-                <li>Simulation 검증 및 유지보수</li>
+            <p>주식회사 올에이아이(AllAI Inc.)는 최첨단 AI 및 컴퓨팅 솔루션을 제공하는 전문 기업입니다. NVIDIA Jetson 및 Hexagon AB의 제품을 통해 고객에게 최상의 기술을 제공하고 있으며, 무인 배송 로봇 플랫폼을 개발하는 선도적인 회사입니다.</p>
+        </section>
+        <section id="products" class="section">
+            <h2>제품 정보</h2>
+            <h3>NVIDIA Jetson</h3>
+            <p>NVIDIA Jetson은 AI 컴퓨팅을 위한 강력한 플랫폼으로, 다양한 산업에서 활용됩니다. Jetson 플랫폼은 로봇, 드론, 스마트 카메라, 그리고 AIoT(인공지능 사물인터넷) 장치에 이르기까지 다양한 응용 분야에서 사용됩니다.</p>
+            <img src="nvidia-jetson.jpg" alt="NVIDIA Jetson" class="jetson-image">
+            <h4>주요 특징</h4>
+            <ul class="product-list">
+                <li><strong>고성능:</strong> NVIDIA의 최신 GPU 아키텍처를 기반으로 하여 높은 성능을 제공합니다.</li>
+                <li><strong>에너지 효율:</strong> 저전력 소모로 에너지 효율을 극대화합니다.</li>
+                <li><strong>확장성:</strong> 다양한 형태의 Jetson 모듈을 통해 다양한 요구사항을 충족할 수 있습니다.</li>
+                <li><strong>개발자 친화적:</strong> CUDA, cuDNN, TensorRT와 같은 NVIDIA의 소프트웨어 툴킷을 지원하여 개발자들이 쉽게 사용할 수 있습니다.</li>
             </ul>
-            <img src="images/services.png" alt="서비스 이미지">
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>프로젝트</h2>
-            <ul>
-                <li>진주시 제주시 감응형 ITS Edge 신호제어 시스템 H/W 납품</li>
-                <li>L社 전기차 충전 서비스 H/W 개발 및 납품</li>
-                <li>AI 관련 R&D 프로젝트</li>
-                <li>부산대학교 산학협력 지능형 번역 서비스 개발 프로젝트</li>
+            <h4>주요 제품 라인업</h4>
+            <ul class="product-list">
+                <li><strong>Jetson Nano:</strong> 소형 폼 팩터의 저전력 AI 컴퓨터로, 간단한 AI 및 딥러닝 애플리케이션에 적합합니다.</li>
+                <li><strong>Jetson TX2:</strong> 임베디드 AI 컴퓨팅을 위한 중간급 솔루션으로, 높은 성능과 에너지 효율을 제공합니다.</li>
+                <li><strong>Jetson Xavier NX:</strong> 컴팩트한 사이즈에서 데이터 센터급 AI 성능을 제공하는 모듈입니다.</li>
+                <li><strong>Jetson AGX Xavier:</strong> 로봇, 드론 및 기타 자율 시스템을 위한 최고 성능의 AI 컴퓨팅 플랫폼입니다.</li>
             </ul>
-            <img src="images/projects.png" alt="프로젝트 이미지">
-        </div>
-    </section>
-
-    <section id="business-model" class="section">
-        <div class="container">
-            <h2>비즈니스 모델</h2>
-            <p>고객이 원하는 One Stop 맞춤형 계약으로 비즈니스에서 필요한 부분만 도와드립니다.</p>
-            <ul>
-                <li>R&D 컨설팅 및 H/W 도면 검토</li>
-                <li>AI 모델을 위한 데이터 수집 및 가공</li>
-                <li>양산 제품 제작 및 생산 관리</li>
-                <li>시뮬레이션 환경 구축</li>
-            </ul>
-            <img src="images/business-model.png" alt="비즈니스 모델 이미지">
-        </div>
-    </section>
-
-    <section id="why-choose-us" class="section">
-        <div class="container">
-            <h2>왜 올에이아이?</h2>
-            <ul>
-                <li>소량 제작 및 인증 서비스</li>
-                <li>AI 서비스별 특화 지원</li>
-                <li>한국어 엔지니어링 서비스</li>
-                <li>Jetson Carrier Board 전문가</li>
-            </ul>
-            <img src="images/why-choose-us.png" alt="왜 올에이아이 이미지">
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>문의</h2>
-            <p>대표번호: 031-721-7277</p>
-            <p>이메일: allai@allai.co.kr</p>
-            <p>주소: 경기도 성남시 수정구 대왕판교로 815 창업존 718호</p>
-            <img src="images/contact.png" alt="문의 이미지">
-        </div>
-    </section>
-
+            <h4>무인 배송 로봇</h4>
+            <p>NVIDIA Jetson 플랫폼을 기반으로 한 무인 배송 로봇은 자율 주행 기능과 실시간 데이터 처리 능력을 갖추고 있어, 효율적인 물류 및 배송 솔루션을 제공합니다. 올에이아이는 이러한 무인 배송 로봇 플랫폼을 개발하여 스마트 물류 혁신을 선도하고 있습니다.</p>
+            <h4>Omniverse</h4>
+            <p>Omniverse는 NVIDIA가 제공하는 실시간 3D 협업 및 시뮬레이션 플랫폼입니다. 다양한 3D 소프트웨어 간의 원활한 협업을 가능하게 하며, 실시간 물리적 정확성을 유지하면서 시뮬레이션을 수행할 수 있습니다.</p>
+            <img src="omniverse.jpg" alt="NVIDIA Omniverse" class="omniverse-image">
+            <div class="sub-section">
+                <h5>주요 특징</h5>
+                <ul class="product-list">
+                    <li><strong>실시간 협업:</strong> 다양한 3D 툴 간의 실시간 협업을 지원하여 프로젝트 효율성을 극대화합니다.</li>
+                    <li><strong>물리적 시뮬레이션:</strong> 실제 물리 법칙에 기반한 정확한 시뮬레이션을 제공합니다.</li>
+                    <li><strong>확장성:</strong> 다양한 플러그인과 확장을 통해 기능을 확장할 수 있습니다.</li>
+                </ul>
+            </div>
+            <h4>ISAAC Platform</h4>
+            <p>ISAAC Platform은 NVIDIA가 제공하는 로봇 개발 및 시뮬레이션 플랫폼입니다. 로봇의 설계, 테스트 및 배포 과정을 간소화하고, 실제 환경과 유사한 시뮬레이션을 통해 로봇 개발을 가속화합니다.</p>
+            <img src="isaac-platform.jpg" alt="NVIDIA ISAAC Platform" class="isaac-image">
+            <div class="sub-section">
+                <h5>주요 특징</h5>
+                <ul class="product-list">
+                    <li><strong>로봇 시뮬레이션:</strong> 실제 환경을 모사한 고정밀 시뮬레이션을 통해 로봇 개발을 지원합니다.</li>
+                    <li><strong>개발 툴킷:</strong> 다양한 SDK와 툴킷을 제공하여 로봇 애플리케이션 개발을 간소화합니다.</li>
+                    <li><strong>확장성:</strong> 여러 종류의 로봇 플랫폼을 지원하여 다양한 로봇 개발 요구를 충족합니다.</li>
+                </ul>
+            </div>
+            <h3>Hexagon AB</h3>
+            <p>Hexagon AB는 센서, 소프트웨어 및 자율 기술 분야의 글로벌 리더로, 스마트 팩토리, 스마트 시티 및 자율 주행 솔루션을 제공합니다. Hexagon의 기술은 정밀한 데이터 수집 및 분석을 통해 효율성과 생산성을 극대화합니다.</p>
+            <img src="hexagon-ab.jpg" alt="Hexagon AB" class="hexagon-image">
+            <h4>Methology</h4>
+            <p>Methology 솔루션은 데이터 수집, 처리 및 해석을 통해 정확한 정보 기반의 의사결정을 지원합니다.</p>
+            <div class="sub-section">
+                <h5>주요 제품</h5>
+                <ul class="product-list">
+                    <li><strong>Adams:</strong> 세계적으로 사용되는 다물체 동역학 시뮬레이션 소프트웨어로, 복잡한 기계 시스템의 거동을 예측합니다.</li>
+                    <li><strong>VTD (Virtual Test Drive):</strong> 자율 주행 차량 및 운전자 지원 시스템의 가상 테스트 환경을 제공합니다.</li>
+                </ul>
+            </div>
+            <h4>Design & Engineering</h4>
+            <p>Design & Engineering 솔루션은 제품 설계 및 엔지니어링을 위한 도구를 제공하여, 제품 개발 과정을 최적화합니다.</p>
+            <div class="sub-section">
+                <h5>주요 제품</h5>
+                <ul class="product-list">
+                    <li><strong>CFD-Cradle:</strong> 유체 역학 시뮬레이션 소프트웨어로, 다양한 산업에서 유체 흐름을 분석하고 최적화합니다.</li>
+                    <li><strong>Hexagon PPM:</strong> 플랜트 설계 및 운영을 위한 소프트웨어 솔루션.</li>
+                </ul>
+            </div>
+            <h4>Manufacturing Intelligence</h4>
+            <p>Manufacturing Intelligence 솔루션은 제조 공정의 모니터링, 분석 및 최적화를 통해 생산성을 극대화합니다.</p>
+            <div class="sub-section">
+                <h5>주요 제품</h5>
+                <ul class="product-list">
+                    <li><strong>Leica Geosystems:</strong> 측량 및 지리 공간 데이터 수집을 위한 정밀 도구 및 솔루션.</li>
+                    <li><strong>Hexagon SI:</strong> 자율 주행 및 스마트 시티 솔루션.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="news" class="section">
+            <h2>뉴스 및 공지사항</h2>
+            <div id="news-board">
+                <div class="news-item">
+                    <h4>공지사항 제목 1</h4>
+                    <p>공지사항 내용이 여기에 표시됩니다. 최신 뉴스와 업데이트 정보를 확인하세요.</p>
+                    <small>2024-07-07</small>
+                </div>
+                <div class="news-item">
+                    <h4>공지사항 제목 2</h4>
+                    <p>공지사항 내용이 여기에 표시됩니다. 최신 뉴스와 업데이트 정보를 확인하세요.</p>
+                    <small>2024-06-30</small>
+                </div>
+                <!-- 더 많은 뉴스 항목을 여기에 추가할 수 있습니다. -->
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2>문의하기</h2>
+            <form>
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">이메일:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">메시지:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <input type="submit" value="보내기">
+            </form>
+        </section>
+    </div>
     <footer>
-        <div class="container">
-            <p>&copy; 2024 올에이아이. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 주식회사 올에이아이. All rights reserved.</p>
     </footer>
 </body>
 </html>
